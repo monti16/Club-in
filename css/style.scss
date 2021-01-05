@@ -1,0 +1,688 @@
+$parmcolor:#46C2FF;
+$secocolor:#BD11FA;
+$bagrcolor:#21212E;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins';
+    background-color: $bagrcolor;
+}
+a{
+    text-decoration-line: none;
+}
+li{
+    list-style: none;
+}
+a , button {
+    font-size: 15px;
+}
+p{
+    font-size: 19px;
+    color: #ffffff;
+}
+.btn{
+    padding: 17px 40px;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: linear-gradient(to right ,$parmcolor -29% ,$secocolor 81%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px #822EFF;
+    cursor: pointer;
+}
+h1, h2, h3, h4{
+    text-transform: capitalize;
+}
+span{
+    color: $parmcolor;
+}
+.continer{
+    width: 86%;
+    margin-left: 7%;
+}
+// part 1 
+.section-one{
+    height: 625px;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.nav img{
+    width: 21%;
+    height: 100%;
+}
+ul{
+    margin-left: 26%;
+    padding: 0%;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    display: inline-block;
+    margin-right: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+ul li a:hover{
+    color: $parmcolor;
+}
+.signin{
+    margin: 0% 1% 0% 2.5%;
+    padding: 9px 3%;
+    background: linear-gradient( to right ,$parmcolor -29% ,$secocolor 81% );
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.signup{
+    padding: 9px 3%;
+    background: none;
+    border: 1.5px solid $parmcolor;
+    border-radius: 5px;
+    color: $parmcolor;
+    cursor: pointer;
+}
+.signup:hover{
+    background: linear-gradient( to right ,$parmcolor -29% ,$secocolor 81% );
+    border: none;
+    color: #ffffff;
+}
+.content{
+    margin-top: 145px;
+    display: inline-block;
+}
+.content p{
+    text-transform: uppercase;
+}
+.content h1{
+    margin: -4px 0px 32px 0px;
+    font-size: 50px;
+    color: $parmcolor;
+}
+.img-lan{
+    float: right;
+    width: 47%;
+    margin-top:-50px;
+
+}
+
+// part 2 
+.events{
+    height:500px;
+    margin-top: 90px;
+}
+.main-events{
+    width:36%;
+    height: 100%;
+    margin-right:5%;
+    background-image: url('../images/Rectangle 2219.png');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    float: left;
+    background-color: $bagrcolor;
+    box-shadow: 0px 0px 40px #00000054;
+}
+.info h2{
+    font-size: 25px;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 38%;
+}
+.date{
+    display: inline-block;
+    font-size: 12px;
+    color: $parmcolor;
+}
+.fa-calendar{
+    color: $secocolor;
+    margin-right: 1%;
+}
+.info{
+    background-color: #212121bf;
+    padding: 0px 3%;
+}
+.info p{
+    width: 90%;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.map-info{
+    margin: 0px 1% 0px 76%;
+}
+.fa-map-marker-alt{
+    color: $secocolor;
+}
+.addr{
+    color: $parmcolor;
+    font-size: 13px;
+}
+.all-events{
+    width:57%;
+    height: 100%;
+    float: left;
+    display: grid;
+    grid-row-gap: 27px;
+}
+.Event{
+    font-weight: 300;
+    color: $parmcolor;
+    background-color: #00aaff1f;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 4px 70px 4px 12px;
+}
+.event{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bagrcolor;
+    border-radius: 5px;
+    background-color: $bagrcolor;
+    box-shadow: 0px 0px 40px #00000054;
+}
+.date-ev{
+    display: flex;
+    align-items: center;
+}
+.date-ev span:first-child{
+    font-size: 35px;
+    padding-left: 5px;
+}
+.date-ev span:nth-child(2){
+    font-size: 12px;
+    padding-left: 10px;
+}
+.titel-event{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.time{
+    color: $parmcolor;
+    font-size: 12px;
+}
+.type-event{
+    color: #ffffff;
+    padding: 14px 10px;
+    border-radius: 5px;
+    background-color: $secocolor;
+}
+.fa-arrow-right{
+    color: $parmcolor;
+    padding: 10px 17px;
+    border: 1px solid $parmcolor;
+    border-radius: 5px;
+}
+.fa-arrow-left{
+    @extend .fa-arrow-right;
+}
+.arrow .fa-arrow-left{
+    margin: 0%  1% 0% 81%;
+}
+
+// part 3 
+.artist{
+    margin-top: 130px;
+    height: 500px;
+}
+.artist h2{
+    font-size: 50px;
+    text-align: center;
+    color: $parmcolor;
+    text-transform: uppercase;
+} 
+.groupe-arts{
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.one-arts{
+    width: 31%;
+    height: 300px;
+    background-color: $bagrcolor;
+    box-shadow: 0px 0px 40px #00000094;
+}
+.one-arts div{
+    padding: 0px 20px;
+}
+.one-arts h3{
+    padding: 0px 20px;
+}
+.one-arts p{
+    padding: 0px 20px;
+}
+.addr-arts{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.addr-arts .fas{
+    color: $secocolor;
+    margin-right: 2%;
+}
+.addr-arts span{
+    font-size: 12px;
+}
+.addr-arts span:nth-child(2){
+    margin-right: 55%;
+}
+.groupe-arts img{
+    width: 100%;
+    height: 100px;
+}
+.one-arts h3{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 15px 0px 10px 0px;
+}
+.one-arts .line{
+    width: 50%;
+    height: 1.3px;
+    background-color: $secocolor;
+    opacity: .5;
+    margin:0px 0px 10px 20px;
+}
+.one-arts p{
+    width: 87%;
+    font-size: 12px;
+}
+.next-arts{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group-eli{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5%;
+}
+.group-eli div{
+    width: 10px;
+    height: 10px;
+    background-color: $parmcolor;
+    border-radius: 50%;
+    opacity: .3;
+}
+.group-eli .active-eli{
+    width: 17px;
+    height: 17px;
+    background-color: $parmcolor;
+    opacity: 1;
+}
+
+// part 3 
+.subs-email{
+    width: 100%;
+    height: 280px;
+    margin-top: 50px;
+    padding-top: 50px;
+    background-image: url('../images/Rectangle 2260.png');
+    background-size: cover;
+}
+.subs{
+    background-color: $bagrcolor;
+    height: 180px;
+    padding: 0px 2.5%;
+    display: flex;
+    align-items: center;
+}
+.subs div h3{
+    color: #ffffff;
+    font-size: 25px;
+}
+.subs div p{
+    font-size: 15px;
+    opacity: .8;
+}
+.box{
+    width: 55%;
+    height: 60px;
+    margin-left: 8.5%;
+    display: flex;
+    align-items: center;
+}
+.email{
+    width: 64%;
+    height: 51px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+input :active{
+    border: none;
+}
+.box button{
+    @extend .btn;
+    box-shadow: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+// part 4 
+.about-cloobin{
+    display: inline-flex;
+    background: linear-gradient(to right, #46C2FF -29%, #BD11FA 81%);
+}
+.content-cloo{
+    height: 375px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section-left{
+    float: left;
+    width: 64%;
+}
+.section-left h2,.con-content h3{
+    font-size: 30px;
+    color: $bagrcolor;
+    text-transform: uppercase;
+}
+.section-left div,.con-content div{
+    width: 35%;
+    height: 1px;
+    margin-top: 8px;
+    opacity: .7;
+    background-color: $bagrcolor;
+}
+.section-left p{
+    font-size: 13.5px;
+    margin: 22px 0px 100px 0px;
+    color: $bagrcolor;
+}
+.section-left img{
+    width: 30%;
+}
+.section-right{
+    position: relative;
+    float: right;
+    width: 35%;
+}
+.img-two{
+    width: 60%;
+    margin: 50px 0px 0px 40%;
+}
+.img-one{
+    position: absolute;
+    width: 60%;
+    top: 0%;
+    left: 18%;
+}
+.stors{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    margin: 29px 0px 0px 17%;
+}
+.stors img{
+    width: 43%;
+    height: 40px;
+    cursor: pointer;
+}
+
+// part 5
+.Artist{
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Artist img{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+}
+.content-arts{
+    position: relative;
+    width: 70%;
+    height: 60%;
+    padding: 20px 37px;
+    background-color: #21212ed9;
+    border-radius: 5px;
+}
+.content-arts h2{
+    font-size: 40px;
+    text-align: center;
+    color: $parmcolor;
+    text-transform: capitalize;
+}
+.arrow-two{
+    position:absolute;
+    top: 35px;
+    left: 85%;
+}
+.content-arts .fas{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.content-arts p{
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.parg-arts{
+    margin: 25px 0px 13px 0px;
+}
+.butt{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.content-arts button{
+    @extend .btn;
+}
+
+// part 6
+.cloobin-party{
+    height: auto;
+    margin-top: 100px;
+}
+.head-cloobin{
+    display: flex;
+    align-items: center;
+}
+.cloobin-party h2{
+    font-size: 40px;
+    display: inline-block;
+    color: $parmcolor;
+    text-transform: uppercase;
+}
+.cloobin-party p{
+    margin-left: 5%;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+.gallery{
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap:15px;
+}
+.gallery div div{
+    height: 425px;
+}
+.gallery div div img{
+    width: 100%;
+    height: 100%;
+}
+.photos1{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-column-gap:15px;
+}
+.photos2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap:15px;
+}
+.photos3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-column-gap:15px;
+}
+
+// part7
+.contacts{
+    background: linear-gradient(to right bottom , #46C2FF -29%, #BD11FA 81%);
+    display: inline-block;
+    margin-top: 80px;
+    width: 100%;
+}
+.con-content{
+    margin-top: 80px ;
+    margin-bottom: 30px;
+    padding:0px 30px;
+}
+.con-content .line{
+    width: 15%;
+}
+.con-content p{
+    color: $bagrcolor;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    
+}
+.con-content p:nth-child( odd ) {
+    margin: 40px 0px 20px 0px;
+}
+.con-content button{
+    position: relative;
+    transform: translate(-50%,0%);
+    left:50%;
+    margin-top: 100px;
+    padding: 14px 60px;
+    font-size: 25px;
+    color: #fff;
+    background-color: $bagrcolor;
+    box-shadow: 0px 0px 40px #822EFF;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+// part 8
+footer{
+    margin-top: 100px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.6fr 1.25fr;
+    margin-bottom: 150px;
+}
+.logo-fo{
+    width: 55%;
+}
+ul{
+    display: inline-block;
+}
+.footer ul span{
+    color: $parmcolor;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.footer ul li{
+    display: inline-block;
+    color:#fff;
+}
+ul img{
+    width: 35px;
+    height: 35px;
+    margin: 7px 10px 0px 0px;
+}
+ul p{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+.img{
+    position: absolute;
+    width: 55%;
+    height: 715px;
+    z-index: -1;
+    top:0%;
+    left:0%;
+}
+.img-oone{
+    position: absolute;
+    width: 22%;
+    height: 910px;
+    z-index: -2;
+    top: 571px;
+    left:0%;
+}
+.img-ttwo{
+    position: absolute;
+    width: 65%;
+    height: 1032px;
+    z-index: -3;
+    top: 1157px;
+    left:35%;
+}
+.img-grou{
+    position: absolute;
+    margin-top: -20px;
+    width: 18%;
+    right: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
